@@ -1,6 +1,9 @@
 import './App.css';
+import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, CssBaseline} from '@mui/material';
 import ResponsiveAppBar from './components/AppBar';
+import SplashPhoto from './images/bg.png';
+
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -22,6 +25,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <ResponsiveAppBar/>
+        
+        <Box
+            component="img"
+            src={SplashPhoto}
+          />
       </ThemeProvider>
     </div>
   );
