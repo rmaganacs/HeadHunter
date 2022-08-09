@@ -50,6 +50,12 @@ function App() {
           component="img"
           src={SplashPhoto}
           />
+          <Typography
+            position="relative"
+            sx={{fontSize: 50, top: "-360px"}}
+            color={"white"}>
+            SOVA CAN GO BOOM BOOM.
+          </Typography>
       </ThemeProvider>
     </div>
   );
