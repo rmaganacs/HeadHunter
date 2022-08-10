@@ -1,8 +1,9 @@
 import './App.css';
 import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme, CssBaseline, Typography} from '@mui/material';
+import { CardMedia, ThemeProvider, createTheme, CssBaseline, Typography} from '@mui/material';
 import ResponsiveAppBar from './components/AppBar';
-import SplashPhoto from './images/bg1.png';
+import Sova from './images/sova.png';
+import Chamber from './images/chamber.png';
 import VideoTop from './images/vid.mp4';
 import Icon from './images/logo.png';
 
@@ -44,18 +45,74 @@ function App() {
           component="img"
           src={Icon}
           />
-        <Box // Sova PNG Render Displayed
-          position="relative"
-          sx={{mt: -20}}
-          component="img"
-          src={SplashPhoto}
-          />
-          <Typography
+        {/* Sova */}
+        <Box>
+          <Box // Sova PNG Render Displayed
             position="relative"
-            sx={{fontSize: 50, top: "-360px"}}
+            sx={{mt: -20}}
+            component="img"
+            src={Sova}
+          />
+          <Typography // Sova's Description
+            component="pre"
+            position="relative"
+            style={{ wordWrap: "break-word" }}
+            sx={{fontSize: 25, top: "-360px", left: "200px"}}
             color={"white"}>
-            SOVA CAN GO BOOM BOOM.
+            Hailing from the town of Severomorsk, in Murmansk Oblast, Russia, Sasha Novikov 
+            is an archer who became{"\n"} an agent for the VALORANT Protocol as its sixth recruit, 
+            "Sova". With his right eye replaced with a mechanical{"\n"} one after he lost it, Sova 
+            primarily serves as the team's scout, gathering information and searching for 
+            targets{"\n"} using olden methods should technology come up short. Being highly capable 
+            and reliable both in the field and{"\n"} with his work, whilst also having experience with 
+            multiple radianite-related events (having traveled through a{"\n"} rift and having met his 
+            Omega counterpart), Sova has earned a reputation of being one of the Protocol's{"\n"} most 
+            trusted agents, especially to the organization's commander, Brimstone.
           </Typography>
+          <Box // Sova's Youtube Link
+            position="relative"
+            sx={{top: "-300px", left: "330px"}}
+            >
+            <iframe
+              src='https://www.youtube.com/embed/OZ76UP-c8Ao'
+              width="640" height="430"
+              frameborder="0"
+            />
+          </Box>
+        </Box>
+        {/* Chamber */}
+        <Box>
+          <Box // Chamber PNG Render Displayed
+            position="relative"
+            sx={{mt: -35}}
+            component="img"
+            src={Chamber}
+          />
+          <Typography // Chamber's Description
+            component="pre"
+            position="relative"
+            style={{ wordWrap: "break-word" }}
+            sx={{fontSize: 25, top: "-360px", left: "-150px"}}
+            color={"white"}>
+            The Frenchman Vincent Fabron lives his life in search of one necessary goal, 
+            willing to sacrifice anything that{"\n"}gets in his way of achieving it. He has 
+            spent much of his time involved with combat and weapons, having worked{"\n"}for 
+            the French military before becoming a PMC marksman and then a weapons designer 
+            for Kingdom Defense.{"\n"}His employment at Kingdom was only a stepping stone for him 
+            though, as by this point he was already set on{"\n"}his path in pursuit of his sacred 
+            truth.
+          </Typography>
+          <Box // Chamber's Youtube Link
+            position="relative"
+            sx={{top: "-300px", left: "-330px"}}
+            >
+            <iframe
+              src='https://www.youtube.com/embed/FUoqAn5T4h4'
+              width="640" height="430"
+              frameborder="0"
+            />
+          </Box>
+        </Box>
       </ThemeProvider>
     </div>
   );
