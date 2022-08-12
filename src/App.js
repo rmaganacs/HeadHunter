@@ -2,8 +2,8 @@ import './App.css';
 import Box from '@mui/material/Box';
 import { CardMedia, ThemeProvider, createTheme, CssBaseline, Typography} from '@mui/material';
 import ResponsiveAppBar from './components/AppBar';
-import Sova from './images/sova.png';
-import Chamber from './images/chamber.png';
+import Sova from './images/character-banner/sova.png';
+import Chamber from './images/character-banner/chamber.png';
 import VideoTop from './images/vid.mp4';
 import Icon from './images/logo.png';
 
