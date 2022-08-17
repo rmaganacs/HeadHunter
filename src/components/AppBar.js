@@ -29,6 +29,7 @@ const ResponsiveAppBar = () => {
               sx={{ ml: "-2"}}
               component="img"
               src={IconLogo}
+              layout='responsive'
             />
             <Box sx={{ mx: "auto"}}>
               <Tabs
