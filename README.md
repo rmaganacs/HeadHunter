@@ -23,6 +23,8 @@ npm i @mui/lab
 ```
 npm i react-parallax
 ```
+```
+npm install react-router-dom
 
 ## Known Issues
 Proper scaling for mobile has not been coded.
