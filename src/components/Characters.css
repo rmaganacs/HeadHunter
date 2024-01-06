@@ -9,3 +9,10 @@
     top: 0;
     left: 0;
 }
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('../font/Tungsten.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}

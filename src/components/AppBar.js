@@ -25,12 +25,12 @@ const ResponsiveAppBar = () => {
         <Container maxWidth="xxl">
           <Toolbar sx={{justifyContent:'space-between'}}>
             <Box
-              sx={{ ml: "-2"}}
+              sx={{ ml: "-2", display: {xs: "none", sm: "none", md: "none", lg: "block"}}}
               component="img"
               src={IconLogo}
               layout='responsive'
             />
-            <Box sx={{ mx: "auto"}}>
+            <Box sx={{ mx: "auto", display: {xs: "none", sm: "none", md: "none", lg: "block"}}}>
               <Tabs
                 sx={{"& button:hover": { color: "#DCDBDB" }}}
                 textColor='white'
@@ -49,7 +49,7 @@ const ResponsiveAppBar = () => {
               </Tabs>
             </Box>
             <Box
-              sx={{ mr: "-2"}}
+              sx={{ mr: "-2", display: {xs: "none", sm: "none", md: "none", lg: "block"}}}
               component="img"
               src={BufferLogo}
             />
